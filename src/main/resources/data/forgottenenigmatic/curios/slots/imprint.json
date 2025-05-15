@@ -1,6 +1,6 @@
 {
   "order": 20,
-  "size": 4,
-  "icon": "curios:slot/empty_custom_slot",
+  "size": 3,
+  "icon": "forgottenenigmatic:slot/imprint",
   "add_cosmetic": true
 }
