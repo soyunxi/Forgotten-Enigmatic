@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "enigmaticlegacy:is_enabled",
+      "item": "enigmaticlegacy:desolation_ring"
+    }
+  ],
+  "pattern": [
+    "HAH",
+    "NXN",
+    "CPE"
+  ],
+  "key": {
+    "X": {
+      "item": "enigmaticlegacy:golden_ring"
+    },
+	"H": {
+      "item": "enigmaticlegacy:cosmic_heart"
+    },
+	"E": {
+      "item": "enigmaticlegacy:void_pearl"
+    },
+	"A": {
+      "item": "enigmaticlegacy:abyssal_heart"
+    },
+	"P": {
+      "item": "enigmaticlegacy:evil_essence"
+    },
+	"N": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "C": {
+      "item": "enigmaticlegacy:cursed_scroll"
+    }
+  },
+  "result": {
+    "item": "enigmaticlegacy:desolation_ring"
+  }
+}
