@@ -5,6 +5,8 @@
   "compatibilityLevel": "JAVA_17",
   "refmap": "forgottenenigmatic.refmap.json",
   "mixins": [
+    "CurioUtilsMixin",
+    "CursedRingMixin",
     "CursedScrollMixin",
     "DesolationRingMixin",
     "EnigmaticEventHandlerMixin"
