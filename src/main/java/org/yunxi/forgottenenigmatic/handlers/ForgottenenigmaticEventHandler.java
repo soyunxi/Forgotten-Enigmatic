@@ -3,7 +3,6 @@ package org.yunxi.forgottenenigmatic.handlers;
 
 import com.aizistral.enigmaticlegacy.handlers.SuperpositionHandler;
 import com.aizistral.enigmaticlegacy.items.CursedScroll;
-import com.aizistral.enigmaticlegacy.items.ForbiddenFruit;
 import com.aizistral.enigmaticlegacy.registries.EnigmaticItems;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;

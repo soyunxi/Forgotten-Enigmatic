@@ -14,4 +14,9 @@ public class CurioUtilsMixin {
     private static void isCsOn(Player player, CallbackInfoReturnable<Boolean> cir) {
         cir.setReturnValue(cir.getReturnValue() || SuperpositionHandler.isTheCursedOne(player));
     }
+
+    @Inject(method = "getCurseAmount", at = @At("RETURN"), cancellable = true)
+    private static void getCurseAmount(Player player, CallbackInfoReturnable<Integer> cir) {
+        cir.setReturnValue(SuperpositionHandler.getCurseAmount(player) + cir.getReturnValue());
+    }
 }

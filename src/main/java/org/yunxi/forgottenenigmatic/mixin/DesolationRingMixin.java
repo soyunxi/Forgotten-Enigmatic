@@ -11,9 +11,6 @@ import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
-import net.minecraft.tags.TagKey;
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
@@ -27,9 +24,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.phys.AABB;
 import net.minecraftforge.fml.ModList;
-import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.ForgeRegistries;
 import org.jetbrains.annotations.Nullable;
 import org.spongepowered.asm.mixin.Mixin;
@@ -105,7 +100,8 @@ public class DesolationRingMixin extends ItemBaseCurio implements IEldritch {
         return false;
     }
 
-    public void curioTick(SlotContext context, ItemStack stack) {
+    //范围凋零
+    /*public void curioTick(SlotContext context, ItemStack stack) {
         LivingEntity entity = context.entity();
         if (entity instanceof Player player) {
             AABB boundingBoxAroundEntity = SuperpositionHandler.getBoundingBoxAroundEntity(player, 32.0);
@@ -118,7 +114,7 @@ public class DesolationRingMixin extends ItemBaseCurio implements IEldritch {
             }
         }
         super.curioTick(context, stack);
-    }
+    }*/
 
     boolean isFriendly(Entity entity) {
         if (!(entity instanceof LivingEntity living)) return false;
